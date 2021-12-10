@@ -2,6 +2,8 @@ from typing import Callable, Any, Sequence, List
 import tempfile
 import os
 import subprocess
+import shutil
+
 
 PASS = 'PASS'
 FAIL = 'FAIL'
@@ -41,7 +43,7 @@ def mystery(inp: str) -> None:
 # sample_input = 'V"/+!aF-(V4EOz*+s/Q,7)2@0_'
 # sample_input2 = '(V)2w'
 #
-# failing_input = sample_input2
+# failing_input = sample_input
 # property_check = generic_test
 # compile_program = mystery
 # error = ValueError('Invalid input')
@@ -74,9 +76,68 @@ def test_py_program(sequence: List[str], expected_exc=None) -> str:
 
 
 ### TOY
-toy_input1 = read2list('Toy1.py')
-test_py_program(toy_input1, b'TypeError: can only concatenate str (not "int") to str')
+# toy_input1 = read2list('Toy1.py')
+# test_py_program(toy_input1, b'TypeError: can only concatenate str (not "int") to str')
+#
+# failing_input = toy_input1
+# property_check = test_py_program
+# error = b'TypeError: can only concatenate str (not "int") to str'
 
-failing_input = toy_input1
-property_check = test_py_program
-error = b'TypeError: can only concatenate str (not "int") to str'
+
+
+
+### ----------------- BENCHMARK
+def read_token(filename: str) -> List[str]:
+    with open(filename, 'r') as f:
+        tokens = f.read().split(' ')
+    return tokens
+
+def test_token_program(sequence: List[str], bench: str, bash_check: str) -> str:
+    with tempfile.TemporaryDirectory() as td:
+        shutil.copyfile(bash_check, f"{td}/r.sh")
+        filepath = td+"/"+bench
+        with open(filepath, 'w') as f:
+            f.write(' '.join(sequence))
+
+        os.chdir(td)
+        try:
+            proc = subprocess.run(['bash', f"{td}/r.sh"],stderr=subprocess.STDOUT)
+            if proc.returncode == 0:
+                outcome = FAIL
+            else:
+                outcome = PASS
+        except Exception as e:
+            outcome = UNRESOLVED
+
+    print(f"Test({list(sequence)}):\t{outcome}")
+    return outcome
+
+def test_program(sequence: List[str], bench: str, bash_check: str) -> str:
+    with tempfile.TemporaryDirectory() as td:
+        shutil.copyfile(bash_check, f"{td}/r.sh")
+        filepath = td+"/"+bench
+        with open(filepath, 'w') as f:
+            f.writelines(sequence)
+
+        os.chdir(td)
+        try:
+            proc = subprocess.run(['bash', f"{td}/r.sh"],stderr=subprocess.STDOUT)
+            if proc.returncode == 0:
+                outcome = FAIL
+            else:
+                outcome = PASS
+        except Exception as e:
+            outcome = UNRESOLVED
+
+    print(f"Test({list(sequence)}):\t{outcome}")
+    return outcome
+
+bench = 't.cpp'
+# input = read2list(f'benchmark_toys/cpp_print/{bench}')
+input = read_token(f'benchmark_toys/cpp_print/{bench}')
+print(input)
+
+failing_input = input
+# property_check = test_program
+property_check = test_token_program
+bash_check = '/Users/x2336zha/Documents/DD_vs_ProbDD/benchmark_toys/cpp_print/r.sh'

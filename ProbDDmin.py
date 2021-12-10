@@ -1,7 +1,8 @@
-from typing import Callable, Any, Sequence
 import collections
-from copy import deepcopy
 from Utils import *
+import time
+
+Query = 0
 
 
 class ProbDD(object):
@@ -9,7 +10,7 @@ class ProbDD(object):
         self._test = test
         self._id_prefix = id_prefix
         self.p = collections.OrderedDict()
-        self.initialP = 0.5
+        self.initialP = 0.00001
         self.threshold = 0.8
         self.min = []
 
@@ -86,16 +87,23 @@ class ProbDD(object):
 
     def _test_config(self, config, *test_args: Any):
         # config_id = self._id_prefix + config_id
+        global Query
+        Query += 1
         # input_string = ''.join(config)
+        return self._test(config, *test_args)
         return self._test(config, *test_args)
 
 
 def main():
+    c = time.time()
     probdd = ProbDD(property_check)
-    # result = probdd(failing_input, compile_program)
-    result = probdd(failing_input, error)
-    print('Final Reduced Output -->', result)
-    print(len(result))
+    result = probdd(failing_input, bench, bash_check)
+    # result = probdd(failing_input, error)
+    print('time:\n',time.time() - c)
+    print('input size:\n', len(failing_input))
+    print('output size\n', len(result))
+    print('querry:\n',Query)
+    print('Final Reduced Output -->\n', result)
 
 
 if __name__ == '__main__':

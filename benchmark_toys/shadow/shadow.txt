@@ -1,0 +1,25 @@
+shadow.c:9:9: warning: unused variable 'c' [-Wunused-variable]
+    int c = 1;
+        ^
+shadow.c:12:9: warning: unused variable 'd' [-Wunused-variable]
+    int d = a * b;
+        ^
+shadow.c:15:1: error: expected '}'
+^
+shadow.c:3:11: note: to match this '{'
+int main(){
+          ^
+2 warnings and 1 error generated.
+warning: include location '/usr/local/include' is unsafe for cross-compilation [-Wpoison-system-directories]
+shadow.c:9:9: warning: unused variable 'c' [-Wunused-variable]
+    int c = 1;
+        ^
+shadow.c:12:9: warning: unused variable 'd' [-Wunused-variable]
+    int d = a * b;
+        ^
+shadow.c:15:1: error: expected '}'
+^
+shadow.c:3:11: note: to match this '{'
+int main(){
+          ^
+3 warnings and 1 error generated.

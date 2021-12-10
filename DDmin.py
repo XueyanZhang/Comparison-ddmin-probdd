@@ -1,5 +1,8 @@
 from typing import Callable, Any, Sequence
 from Utils import *
+import time
+
+Query = 0
 
 
 def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
@@ -9,6 +12,8 @@ def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
     """
 
     assert test(inp, *test_args) != PASS
+    cache = dict()
+    global Query
 
     n = 2  # Initial granularity
     while len(inp) >= 2:
@@ -19,7 +24,13 @@ def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
         while start < len(inp):
             complement = (inp[:start] + inp[start + subset_length:])
 
-            if test(complement, *test_args) == FAIL:
+            if str(complement) in cache:
+                outcome = cache[str(complement)]
+            else:
+                outcome = test(complement, *test_args)
+                cache[str(complement)] = outcome
+            Query += 1
+            if outcome == FAIL:
                 inp = complement  # update inp to exclude subset
                 n = max(n - 1, 2)
                 some_complement_is_failing = True
@@ -36,9 +47,15 @@ def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
 
 
 def main():
+    c = time.time()
     # result = ddmin(property_check, failing_input, compile_program, error)
-    result = ddmin(property_check, failing_input, error)
-    print('Final Reduced Output -->', result)
+    # result = ddmin(property_check, failing_input, error)
+    result = ddmin(property_check, failing_input, bench, bash_check)
+    print('time:\n',time.time() - c)
+    print('input size:\n', len(failing_input))
+    print('output size\n', len(result))
+    print('querry:\n',Query)
+    print('Final Reduced Output -->\n', result)
 
 
 

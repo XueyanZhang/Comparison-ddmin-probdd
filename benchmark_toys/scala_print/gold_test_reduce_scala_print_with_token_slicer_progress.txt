@@ -1,0 +1,6967 @@
+======================Reduction starts======================
+
+The spar tree is the following.
+compilationUnit {id=1}
+|___(+) {id=2,slot_type=topStatSeq}
+    |___aux_rule__tmplDef_7 {id=8,slot_type=[topStat,aux_rule__topStat_5,tmplDef,aux_rule__tmplDef_5,altnt_block__tmplDef_3,aux_rule__tmplDef_7]}
+        |___Token:object {id=9,slot_type=Token}
+        |___objectDef {id=10,slot_type=objectDef}
+            |___Token:Hello {id=11,slot_type=Id}
+            |___(?) {id=13,slot_type=[classTemplateOpt,optional__classTemplateOpt_3]}
+                |___templateBody {id=15,slot_type=[aux_rule__classTemplateOpt_2,templateBody]}
+                    |___Token:{ {id=16,slot_type=Token}
+                    |___(+) {id=17,slot_type=kleene_plus__templateBody_3}
+                    |   |___aux_rule__def_2 {id=23,slot_type=[templateStat,aux_rule__templateStat_10,altnt_block__templateStat_9,def,aux_rule__def_2]}
+                    |       |___Token:def {id=24,slot_type=Token}
+                    |       |___aux_rule__funDef_7 {id=26,slot_type=[funDef,aux_rule__funDef_7]}
+                    |           |___funSig {id=27,slot_type=funSig}
+                    |           |   |___Token:main {id=123,slot_type=Id}
+                    |           |   |___(*) {id=125,slot_type=[paramClauses,kleene_star__paramClauses_1]}
+                    |           |       |___paramClause {id=126,slot_type=paramClause}
+                    |           |           |___Token:( {id=127,slot_type=Token}
+                    |           |           |___(?) {id=128,slot_type=optional__paramClause_2}
+                    |           |           |   |___param {id=131,slot_type=[params,param]}
+                    |           |           |       |___Token:args {id=132,slot_type=Id}
+                    |           |           |       |___(?) {id=133,slot_type=optional__param_3}
+                    |           |           |           |___aux_rule__param_2 {id=134,slot_type=aux_rule__param_2}
+                    |           |           |               |___Token:: {id=135,slot_type=Token}
+                    |           |           |               |___simpleType {id=144,slot_type=[paramType,aux_rule__paramType_2,type_,aux_rule__type__3,infixType,compoundType,aux_rule__compoundType_4,annotType,simpleType]}
+                    |           |           |                   |___Token:Array {id=167,slot_type=[aux_rule__simpleType_5,aux_rule__simpleType_7,stableId,aux_rule__stableId_6,Id]}
+                    |           |           |                   |___(*) {id=146,slot_type=kleene_star__simpleType_3}
+                    |           |           |                       |___typeArgs {id=148,slot_type=[aux_rule__simpleType_4,typeArgs]}
+                    |           |           |                           |___Token:[ {id=149,slot_type=Token}
+                    |           |           |                           |___Token:String {id=163,slot_type=[types,type_,aux_rule__type__3,infixType,compoundType,aux_rule__compoundType_4,annotType,simpleType,aux_rule__simpleType_5,aux_rule__simpleType_7,stableId,aux_rule__stableId_6,Id]}
+                    |           |           |                           |___Token:] {id=151,slot_type=Token}
+                    |           |           |___Token:) {id=129,slot_type=Token}
+                    |           |___aux_rule__funDef_8 {id=29,slot_type=[altnt_block__funDef_5,aux_rule__funDef_8]}
+                    |               |___Token:= {id=30,slot_type=Token}
+                    |               |___blockExpr {id=39,slot_type=[expr,expr1,aux_rule__expr1_23,postfixExpr,infixExpr,prefixExpr,simpleExpr,blockExpr]}
+                    |                   |___Token:{ {id=40,slot_type=Token}
+                    |                   |___(+) {id=44,slot_type=[altnt_block__blockExpr_1,block,kleene_plus__block_1]}
+                    |                   |   |___infixExpr {id=50,slot_type=[blockStat,expr1,aux_rule__expr1_23,postfixExpr,infixExpr]}
+                    |                   |       |___simpleExpr1 {id=98,slot_type=[prefixExpr,simpleExpr1]}
+                    |                   |       |   |___Token:println {id=122,slot_type=[aux_rule__simpleExpr1_6,stableId,aux_rule__stableId_6,Id]}
+                    |                   |       |   |___(*) {id=100,slot_type=kleene_star__simpleExpr1_4}
+                    |                   |       |       |___aux_rule__argumentExprs_7 {id=103,slot_type=[aux_rule__simpleExpr1_5,argumentExprs,aux_rule__argumentExprs_7]}
+                    |                   |       |           |___Token:( {id=104,slot_type=Token}
+                    |                   |       |           |___(?) {id=107,slot_type=[altnt_block__argumentExprs_5,optional__simpleExpr1_1]}
+                    |                   |       |           |   |___Token:"line 1" {id=119,slot_type=[exprs,expr,expr1,aux_rule__expr1_23,postfixExpr,infixExpr,prefixExpr,simpleExpr1,aux_rule__simpleExpr1_6,literal,StringLiteral]}
+                    |                   |       |           |___Token:) {id=106,slot_type=Token}
+                    |                   |       |___(*) {id=52,slot_type=kleene_star__infixExpr_2}
+                    |                   |           |___aux_rule__infixExpr_3 {id=53,slot_type=aux_rule__infixExpr_3}
+                    |                   |               |___Token:println {id=54,slot_type=Id}
+                    |                   |               |___infixExpr {id=55,slot_type=infixExpr}
+                    |                   |                   |___aux_rule__simpleExpr1_10 {id=82,slot_type=[prefixExpr,simpleExpr1,aux_rule__simpleExpr1_6,aux_rule__simpleExpr1_10]}
+                    |                   |                   |   |___Token:( {id=83,slot_type=Token}
+                    |                   |                   |   |___(?) {id=84,slot_type=optional__simpleExpr1_1}
+                    |                   |                   |   |   |___Token:"Hello, world" {id=97,slot_type=[exprs,expr,expr1,aux_rule__expr1_23,postfixExpr,infixExpr,prefixExpr,simpleExpr1,aux_rule__simpleExpr1_6,literal,StringLiteral]}
+                    |                   |                   |   |___Token:) {id=85,slot_type=Token}
+                    |                   |                   |___(*) {id=57,slot_type=kleene_star__infixExpr_2}
+                    |                   |                       |___aux_rule__infixExpr_3 {id=58,slot_type=aux_rule__infixExpr_3}
+                    |                   |                           |___Token:println {id=59,slot_type=Id}
+                    |                   |                           |___aux_rule__simpleExpr1_10 {id=64,slot_type=[infixExpr,prefixExpr,simpleExpr1,aux_rule__simpleExpr1_6,aux_rule__simpleExpr1_10]}
+                    |                   |                               |___Token:( {id=65,slot_type=Token}
+                    |                   |                               |___(?) {id=66,slot_type=optional__simpleExpr1_1}
+                    |                   |                               |   |___Token:"line 2" {id=79,slot_type=[exprs,expr,expr1,aux_rule__expr1_23,postfixExpr,infixExpr,prefixExpr,simpleExpr1,aux_rule__simpleExpr1_6,literal,StringLiteral]}
+                    |                   |                               |___Token:) {id=67,slot_type=Token}
+                    |                   |___Token:} {id=42,slot_type=Token}
+                    |___Token:} {id=18,slot_type=Token}
+------------------------------------------------------------
+
+
+==================Reducing node 2, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 2
+------------------------------------------------------------
+
+
+==================Reducing node 8, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 8
+------------------------------------------------------------
+
+
+==================Reducing node 9, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 9
+------------------------------------------------------------
+
+
+=================Reducing node 10, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 10
+------------------------------------------------------------
+
+
+=================Reducing node 11, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 11
+------------------------------------------------------------
+
+
+=================Reducing node 13, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 13
+------------------------------------------------------------
+
+
+=================Reducing node 15, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=15}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 15
+------------------------------------------------------------
+
+
+=================Reducing node 16, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 16
+------------------------------------------------------------
+
+
+=================Reducing node 17, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 17
+------------------------------------------------------------
+
+
+=================Reducing node 18, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 18
+------------------------------------------------------------
+
+
+=================Reducing node 23, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+            main
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+                                        {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 23
+------------------------------------------------------------
+
+
+=================Reducing node 24, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 24
+------------------------------------------------------------
+
+
+=================Reducing node 26, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 26
+------------------------------------------------------------
+
+
+=================Reducing node 27, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main                      = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def      args                 = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 27
+------------------------------------------------------------
+
+
+=================Reducing node 29, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 29
+------------------------------------------------------------
+
+
+=================Reducing node 123, size=29=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 123
+------------------------------------------------------------
+
+
+=================Reducing node 125, size=29=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main                      = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 125
+------------------------------------------------------------
+
+
+=================Reducing node 30, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 30
+------------------------------------------------------------
+
+
+=================Reducing node 39, size=29==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) = {
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+        }
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: pass=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===========TestScriptExecutionCacheEntryEviction============
+
+0 entries are removed: 0 --> 0.
+------------------------------------------------------------
+
+
+===========Node edit action set cache is cleared.===========
+
+    size before clearance = 8
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Succeeded to reduce node 39 from 29 to 27
+------------------------------------------------------------
+
+
+=================Reducing node 126, size=27=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular_node]can be epsilon
+    object Hello {
+        def main                      =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 126
+------------------------------------------------------------
+
+
+=================Reducing node 50, size=27==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+                   ("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 50
+------------------------------------------------------------
+
+
+=================Reducing node 127, size=27=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 127
+------------------------------------------------------------
+
+
+=================Reducing node 128, size=27=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(                   ) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 128
+------------------------------------------------------------
+
+
+=================Reducing node 129, size=27=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 129
+------------------------------------------------------------
+
+
+=================Reducing node 98, size=27==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("line 1")
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: pass=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Test script execution is cancelled.=============
+
+It took less than 1 second to cancel the task.
+
+    object Hello {
+        def main(args: Array[String]) =
+                    "line 1"
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===========TestScriptExecutionCacheEntryEviction============
+
+0 entries are removed: 0 --> 0.
+------------------------------------------------------------
+
+
+===========Node edit action set cache is cleared.===========
+
+    size before clearance = 7
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Succeeded to reduce node 98 from 27 to 24
+------------------------------------------------------------
+
+
+=================Reducing node 52, size=24==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 52
+------------------------------------------------------------
+
+
+=================Reducing node 131, size=24=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular_node]can be epsilon
+    object Hello {
+        def main(                   ) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(      Array        ) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 131
+------------------------------------------------------------
+
+
+=================Reducing node 122, size=24=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 122
+------------------------------------------------------------
+
+
+=================Reducing node 53, size=24==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=53}
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular_node]kleene replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 53
+------------------------------------------------------------
+
+
+=================Reducing node 132, size=24=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 132
+------------------------------------------------------------
+
+
+=================Reducing node 133, size=24=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 133
+------------------------------------------------------------
+
+
+=================Reducing node 54, size=24==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 54
+------------------------------------------------------------
+
+
+=================Reducing node 55, size=24==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+            println("line 2")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: pass=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Test script execution is cancelled.=============
+
+It took less than 1 second to cancel the task.
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println
+                   ("line 2")
+    }
+------------------------------------------------------------
+
+
+===========TestScriptExecutionCacheEntryEviction============
+
+0 entries are removed: 0 --> 0.
+------------------------------------------------------------
+
+
+===========Node edit action set cache is cleared.===========
+
+    size before clearance = 10
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Succeeded to reduce node 55 from 24 to 20
+------------------------------------------------------------
+
+
+=================Reducing node 134, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular_node]can be epsilon
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 134
+------------------------------------------------------------
+
+
+=================Reducing node 82, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println "Hello, world"
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 82
+------------------------------------------------------------
+
+
+=================Reducing node 135, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 135
+------------------------------------------------------------
+
+
+=================Reducing node 144, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args:       String ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 144
+------------------------------------------------------------
+
+
+=================Reducing node 83, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 83
+------------------------------------------------------------
+
+
+=================Reducing node 84, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println(              )
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 84
+------------------------------------------------------------
+
+
+=================Reducing node 85, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 85
+------------------------------------------------------------
+
+
+=================Reducing node 167, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 167
+------------------------------------------------------------
+
+
+=================Reducing node 146, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 146
+------------------------------------------------------------
+
+
+=================Reducing node 97, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 97
+------------------------------------------------------------
+
+
+=================Reducing node 148, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=148}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 148
+------------------------------------------------------------
+
+
+=================Reducing node 149, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 149
+------------------------------------------------------------
+
+
+=================Reducing node 163, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 163
+------------------------------------------------------------
+
+
+=================Reducing node 151, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 151
+------------------------------------------------------------
+
+
+==================Reducing node 2, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 2
+------------------------------------------------------------
+
+
+==================Reducing node 8, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 8
+------------------------------------------------------------
+
+
+==================Reducing node 9, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 9
+------------------------------------------------------------
+
+
+=================Reducing node 10, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 10
+------------------------------------------------------------
+
+
+=================Reducing node 11, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 11
+------------------------------------------------------------
+
+
+=================Reducing node 13, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 13
+------------------------------------------------------------
+
+
+=================Reducing node 15, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=15}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 15
+------------------------------------------------------------
+
+
+=================Reducing node 16, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 16
+------------------------------------------------------------
+
+
+=================Reducing node 17, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 17
+------------------------------------------------------------
+
+
+=================Reducing node 18, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 18
+------------------------------------------------------------
+
+
+=================Reducing node 23, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+            main
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 23
+------------------------------------------------------------
+
+
+=================Reducing node 24, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 24
+------------------------------------------------------------
+
+
+=================Reducing node 26, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 26
+------------------------------------------------------------
+
+
+=================Reducing node 27, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def      args                 =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 27
+------------------------------------------------------------
+
+
+=================Reducing node 29, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 29
+------------------------------------------------------------
+
+
+=================Reducing node 66, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 66
+------------------------------------------------------------
+
+
+=================Reducing node 68, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 68
+------------------------------------------------------------
+
+
+=================Reducing node 30, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 30
+------------------------------------------------------------
+
+
+=================Reducing node 36, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 36
+------------------------------------------------------------
+
+
+=================Reducing node 69, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=69}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 69
+------------------------------------------------------------
+
+
+=================Reducing node 65, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 65
+------------------------------------------------------------
+
+
+=================Reducing node 38, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 38
+------------------------------------------------------------
+
+
+=================Reducing node 70, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 70
+------------------------------------------------------------
+
+
+=================Reducing node 71, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(                   ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 71
+------------------------------------------------------------
+
+
+=================Reducing node 72, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 72
+------------------------------------------------------------
+
+
+=================Reducing node 39, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=39}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 39
+------------------------------------------------------------
+
+
+=================Reducing node 74, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=74}
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(      Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 74
+------------------------------------------------------------
+
+
+=================Reducing node 40, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 40
+------------------------------------------------------------
+
+
+=================Reducing node 45, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println "Hello, world"
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 45
+------------------------------------------------------------
+
+
+=================Reducing node 75, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 75
+------------------------------------------------------------
+
+
+=================Reducing node 76, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 76
+------------------------------------------------------------
+
+
+=================Reducing node 46, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 46
+------------------------------------------------------------
+
+
+=================Reducing node 47, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println(              )
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 47
+------------------------------------------------------------
+
+
+=================Reducing node 48, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 48
+------------------------------------------------------------
+
+
+=================Reducing node 77, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=77}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 77
+------------------------------------------------------------
+
+
+=================Reducing node 60, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 60
+------------------------------------------------------------
+
+
+=================Reducing node 78, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 78
+------------------------------------------------------------
+
+
+=================Reducing node 87, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args:       String ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 87
+------------------------------------------------------------
+
+
+=================Reducing node 110, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 110
+------------------------------------------------------------
+
+
+=================Reducing node 89, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 89
+------------------------------------------------------------
+
+
+=================Reducing node 91, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=91}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 91
+------------------------------------------------------------
+
+
+=================Reducing node 92, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 92
+------------------------------------------------------------
+
+
+=================Reducing node 106, size=20=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 106
+------------------------------------------------------------
+
+
+=================Reducing node 94, size=20==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 94
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+        def main(
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+        def main
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+        def
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def main(args
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def main(
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def main
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main(args:
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main(args
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main(
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object
+                                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(args: Array
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(args:
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(args
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello
+                                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object
+                                    ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args: Array[
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args: Array
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args:
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+                                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello
+                                    ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object
+                                   ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args: Array[String
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args: Array[
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args: Array
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args:
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def                           =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+                                    ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello
+                                   ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object
+                             String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array[String]
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array[String
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array[
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args:
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main                      =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def                         ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+                                   ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello
+                             String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object
+                            [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[String])
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[String]
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[String
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args:
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(                     =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main                    ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def                        ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+                             String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello
+                            [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object
+                       Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String]) =
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String])
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String]
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args:
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args                 =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(                   ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main                   ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def                  String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+                            [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello
+                       Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object
+                     : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String]) =
+            println
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String]) =
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String])
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String]
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args:                =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args               ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(                  ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main             String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def                 [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+                       Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello
+                     : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object
+                 args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    (args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]) =
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String])
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array          =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args:              ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args              ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(            String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main            [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def            Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+                     : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello
+                 args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object
+                (args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println(
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+            println
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String])
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[         =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array        ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args:             ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args        String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(           [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main       Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def          : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+                 args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello
+                (args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object
+            main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world"
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println(
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println               )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String])
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String   =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[       ) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array       ]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args:       String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args       [String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(      Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main     : Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def      args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+                (args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello
+            main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=60}
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world")
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println("Hello, world"
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+            println "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: pass=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===========TestScriptExecutionCacheEntryEviction============
+
+0 entries are removed: 0 --> 0.
+------------------------------------------------------------
+
+
+===========Node edit action set cache is cleared.===========
+
+    size before clearance = 203
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String])
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]  =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[      ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args:      [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args  Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(    : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def     (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+            main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object       {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==================Reducing node 2, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 2
+------------------------------------------------------------
+
+
+==================Reducing node 8, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 8
+------------------------------------------------------------
+
+
+==================Reducing node 9, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 9
+------------------------------------------------------------
+
+
+=================Reducing node 10, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 10
+------------------------------------------------------------
+
+
+=================Reducing node 11, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 11
+------------------------------------------------------------
+
+
+=================Reducing node 13, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 13
+------------------------------------------------------------
+
+
+=================Reducing node 15, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=15}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 15
+------------------------------------------------------------
+
+
+=================Reducing node 16, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 16
+------------------------------------------------------------
+
+
+=================Reducing node 17, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 17
+------------------------------------------------------------
+
+
+=================Reducing node 18, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 18
+------------------------------------------------------------
+
+
+=================Reducing node 23, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+            main
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 23
+------------------------------------------------------------
+
+
+=================Reducing node 24, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 24
+------------------------------------------------------------
+
+
+=================Reducing node 26, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 26
+------------------------------------------------------------
+
+
+=================Reducing node 27, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def      args                 =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 27
+------------------------------------------------------------
+
+
+=================Reducing node 29, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 29
+------------------------------------------------------------
+
+
+=================Reducing node 63, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 63
+------------------------------------------------------------
+
+
+=================Reducing node 65, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 65
+------------------------------------------------------------
+
+
+=================Reducing node 30, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 30
+------------------------------------------------------------
+
+
+=================Reducing node 38, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array[String]) =
+                    "Hello, world"
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 38
+------------------------------------------------------------
+
+
+=================Reducing node 66, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=66}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 66
+------------------------------------------------------------
+
+
+=================Reducing node 62, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 62
+------------------------------------------------------------
+
+
+=================Reducing node 40, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 40
+------------------------------------------------------------
+
+
+=================Reducing node 67, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 67
+------------------------------------------------------------
+
+
+=================Reducing node 68, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(                   ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 68
+------------------------------------------------------------
+
+
+=================Reducing node 69, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 69
+------------------------------------------------------------
+
+
+=================Reducing node 43, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=43}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 43
+------------------------------------------------------------
+
+
+=================Reducing node 71, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=71}
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args               ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(      Array        ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 71
+------------------------------------------------------------
+
+
+=================Reducing node 44, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 44
+------------------------------------------------------------
+
+
+=================Reducing node 47, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array[String]) =
+            println(              )
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 47
+------------------------------------------------------------
+
+
+=================Reducing node 46, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 46
+------------------------------------------------------------
+
+
+=================Reducing node 72, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 72
+------------------------------------------------------------
+
+
+=================Reducing node 73, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args               ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 73
+------------------------------------------------------------
+
+
+=================Reducing node 59, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 59
+------------------------------------------------------------
+
+
+=================Reducing node 74, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=74}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 74
+------------------------------------------------------------
+
+
+=================Reducing node 75, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 75
+------------------------------------------------------------
+
+
+=================Reducing node 84, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args: Array        ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [regular node]compatible replacement
+    object Hello {
+        def main(args:       String ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 84
+------------------------------------------------------------
+
+
+=================Reducing node 107, size=19=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 107
+------------------------------------------------------------
+
+
+=================Reducing node 86, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: [kleene_star]dd@1
+    object Hello {
+        def main(args: Array        ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 86
+------------------------------------------------------------
+
+
+=================Reducing node 88, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=88}
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 88
+------------------------------------------------------------
+
+
+=================Reducing node 89, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 89
+------------------------------------------------------------
+
+
+=================Reducing node 103, size=19=================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 103
+------------------------------------------------------------
+
+
+=================Reducing node 91, size=19==================
+
+The current best program is the following
+
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+===================Node reduction is done===================
+
+Failed to reduce node 91
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+        def main
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+        def
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello {
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object Hello
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    object
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@14
+    println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def main(
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def main
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+        def
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello {
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object Hello
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    object
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@13
+    =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main(args
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main(
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def main
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+        def
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello {
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object Hello
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    object
+                                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@12
+    ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(args:
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(args
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main(
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def main
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+        def
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello {
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object Hello
+                                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    object
+                                    ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@11
+    ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args: Array
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args:
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(args
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main(
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def main
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+        def
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello {
+                                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object Hello
+                                    ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    object
+                                   ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@10
+    String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args: Array[
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args: Array
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args:
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(args
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main(
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def main
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+        def                           =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello {
+                                    ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object Hello
+                                   ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    object
+                             String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@9
+    [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array[String
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array[
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args: Array
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args:
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(args
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main(
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def main                      =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+        def                         ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello {
+                                   ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object Hello
+                             String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    object
+                            [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@8
+    Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[String]
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[String
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array[
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args: Array
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args:
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(args
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main(                     =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def main                    ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+        def                        ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello {
+                             String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object Hello
+                            [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    object
+                       Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@7
+    : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String])
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String]
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[String
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array[
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args: Array
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args:
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(args                 =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main(                   ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def main                   ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+        def                  String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello {
+                            [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object Hello
+                       Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    object
+                     : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@6
+    args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String]) =
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String])
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String]
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[String
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array[
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args: Array
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args:                =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(args               ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main(                  ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def main             String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+        def                 [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello {
+                       Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object Hello
+                     : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    object
+                 args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@5
+    (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]) =
+            println
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]) =
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String])
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String]
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[String
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array[
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args: Array          =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args:              ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(args              ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main(            String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def main            [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+        def            Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello {
+                     : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object Hello
+                 args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    object
+                (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@4
+    main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+            println(
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+            println
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]) =
+                                  )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String])
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String]
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[String
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array[         =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args: Array        ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args:             ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(args        String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main(           [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def main       Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+        def          : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello {
+                 args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object Hello
+                (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    object
+            main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@3
+    def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world"
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println(
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+            println               )
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]) =
+                    "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String])
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String]
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[String   =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array[       ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args: Array       ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args:       String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(args       [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main(      Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def main     : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+        def      args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello {
+                (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object Hello
+            main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    object
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@2
+    {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+==============Node edit action set cache hit.===============
+
+    NodeDeletionAction{target_node=59}
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println("Hello, world"
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+            println "Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]) =
+                   ("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String])
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String]  =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[String ) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array[      ]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args: Array String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args:      [String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(args  Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main(    : Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def main args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+        def     (args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello {
+            main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object Hello
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    object       {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+============Testing the following program: fail=============
+
+// edit action set type: token slicer@1
+    Hello {
+        def main(args: Array[String]) =
+            println("Hello, world")
+    }
+------------------------------------------------------------
+
+
+#test success = 4
+#test failure = 425
+#test result cache hits = 0
+#test execution cancelled = 2
+#node edit action set cache hits = 17
