@@ -1,6 +1,7 @@
 from typing import Callable, Any, Sequence
 from Utils import *
 import time
+import random
 
 Query = 0
 
@@ -10,6 +11,8 @@ def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
     Reduce the input inp, using the outcome of test(fun, inp).
     worst time: O(n^2)
     """
+    print("random ddmin now starts")
+    # random.shuffle(inp)
 
     assert test(inp, *test_args) != PASS
     cache = dict()
@@ -17,6 +20,8 @@ def ddmin(test: Callable, inp: Sequence, *test_args: Any) -> Sequence:
 
     n = 2  # Initial granularity
     while len(inp) >= 2:
+        random.shuffle(inp)
+
         start = 0
         subset_length = len(inp) // n
         some_complement_is_failing = False

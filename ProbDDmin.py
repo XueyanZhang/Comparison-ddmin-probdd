@@ -10,7 +10,7 @@ class ProbDD(object):
         self._test = test
         self._id_prefix = id_prefix
         self.p = collections.OrderedDict()
-        self.initialP = 0.00001
+        self.initialP = 0.1
         self.threshold = 0.8
         self.min = []
 
@@ -97,8 +97,8 @@ class ProbDD(object):
 def main():
     c = time.time()
     probdd = ProbDD(property_check)
-    result = probdd(failing_input, bench, bash_check)
-    # result = probdd(failing_input, error)
+    # result = probdd(failing_input, bench, bash_check)
+    result = probdd(failing_input, error)
     print('time:\n',time.time() - c)
     print('input size:\n', len(failing_input))
     print('output size\n', len(result))
