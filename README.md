@@ -1,4 +1,22 @@
 # Comparison-ddmin-probdd
+Here, we explore the similarity and difference between 
+[delta debugging](https://www.cs.purdue.edu/homes/xyzhang/fall07/Papers/delta-debugging.pdf)
+(specifically `ddmin`) algorithm and 
+[probalistic delta debugging](https://xiongyingfei.github.io/papers/FSE21a.pdf)
+(`probdd`).
+
+Delta debugging is a state-of-the-art tool automating the scientific debugging process.
+It iteratively removes elements within the input sequence (e.g., lines of codes) with increasing granularity.
+Each step, the subsequence and its compliment are tested against the user-specified property.
+The result is a smaller program taht still exhibits the specified property (e.g., trigging a bug).
+Delta debugging is integrated to many program reduction tools and used as the base logic.
+
+Probalistic delta debugging is the lastest advancement of delta debugging recently.
+Unlike `ddmin` removing elements in a fixed order, `probdd` maintains a probalistic model that guides the generation of subsequences,
+leading to faster runtime performance and potentially smaller results.
+`probdd` algorithm can be effortlessly integrated with program reduction tools that currently employs `ddmin`.
+
+** Both algorithm implementations are reprodcued as per their publications.
 
 ### Input program
 ```angular2html
@@ -9,11 +27,11 @@ b = 2
 a = random.choice(string.ascii_letters)
 c = a + b
 ```
-This piece of code carefully designed to show off 
+This piece of code carefully designed to show case
 the claimed advatange of ProbDD. 
 
-ProbDD removes elements in a "smart" order,
-whereas ddmin carries out in a fixed order.
+ProbDD removes elements in a intelligent order,
+whereas ddmin carries out the process in a fixed order.
 
 ### DDmin Output
 Due to fixed order, ddmin quickly gets to the single-element level and thus removed `a = 2` before finish.
@@ -43,7 +61,7 @@ Final Reduced Output -->
 ```
 ### ProbDD Output (fixed version)
 ##### initial_prob = 0.1
-ProbDD keeps a dictionary (`map[ element ] = prob`), and this `prob` guides the variant generation.
+ProbDD keeps a dictionary (`map[ element ] = prob`), and this `prob` guides the subsequence generation.
 ```angular2html
 Test(['import string\n', 'import random\n', "a = '2'\n", 'b = 2\n', 'a = random.choice(string.ascii_letters)\n', 'c = a + b\n']):       FAIL
 Test([]):       PASS
@@ -70,8 +88,8 @@ Final Reduced Output -->
  ["a = '2'\n", 'b = 2\n', 'c = a + b\n']
 ```
 ##### initial_prob = 0.01
-Note that the initial probability does affect the result to some extents,
-though its effect may be negligible when input program is large.
+Note that the initial probability does affect the result to some extents (by affecting the element selection order),
+though its effect appears to be negligible when input program is large as its paper.
 ```angular2html
 Test(['import string\n', 'import random\n', "a = '2'\n", 'b = 2\n', 'a = random.choice(string.ascii_letters)\n', 'c = a + b\n']):       FAIL
 Test([]):       PASS
