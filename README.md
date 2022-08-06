@@ -16,7 +16,6 @@ Unlike `ddmin` removing elements in a fixed order, `probdd` maintains a probalis
 leading to faster runtime performance and potentially smaller results.
 `probdd` algorithm can be effortlessly integrated with program reduction tools that currently employs `ddmin`.
 
-** Both algorithm implementations are reprodcued as per their publications.
 
 ### Input program
 ```angular2html
@@ -118,6 +117,18 @@ Final Reduced Output -->
  ['import random\n', "a = '2'\n", 'b = 2\n', 'c = a + b\n']
 ```
 
+### Summary
+As results shown, `probdd` achieves better reduced size in this artificial program.
+
+
+Something more...
+--
+Clearly, the order of elements selection affects reduction performance.
+Then, how does different levels of randomness affects it?
+Two levels of randomness are investigated:
+1. One shuffle before the entire process begins
+2. Shuffle at each granularity level.
+
 ### Random (once) Output
 ##### Best case (same as ProbDD):
 ```angular2html
@@ -176,8 +187,7 @@ Final Reduced Output -->
  ['import string\n', 'a = random.choice(string.ascii_letters)\n', 'import random\n', 'b = 2\n', 'c = a + b\n', "a = '2'\n"]
 ```
 
-### Random (every iter) Output
-I further implemented this version of random ddmin.
+### Random (every gran-lvl) Output
 In each iteration (granularity-level) (not compliment-level), the input sequence is shuffled.
 ```angular2html
 Test(['import string\n', 'import random\n', "a = '2'\n", 'b = 2\n', 'a = random.choice(string.ascii_letters)\n', 'c = a + b\n']):       FAIL
@@ -208,3 +218,14 @@ querry:
 Final Reduced Output -->
  ['import string\n', 'a = random.choice(string.ascii_letters)\n', 'c = a + b\n', "a = '2'\n", 'import random\n', 'b = 2\n']
 ```
+
+### Observations
+The random delta debugging could potentialy improves the quality of reduced program, but the performance is bounded.
+Further evaluations should be performed.
+
+### Disclaimer
+* Both algorithm implementations are reprodcued as per their publications. (minor tweaks may involve.)
+
+* This project is solely meant to quickly prototype the latest techniques, by no mean of comparing their real-world performance.
+
+
